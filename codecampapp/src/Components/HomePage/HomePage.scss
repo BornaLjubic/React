@@ -1,0 +1,40 @@
+.home-page{
+    
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0; /* Svijetla pozadinska boja */
+      
+        &_welcome {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      
+          img {
+            width: 100px; /* Veličina slike */
+            border-radius: 50%; /* Okrugli oblik slike */
+          }
+        }
+      
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 20px;
+          color: #333;
+        }
+      
+        button {
+          font-size: 1rem;
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          cursor: pointer;
+      
+          &:hover {
+            background-color: #0056b3; /* Tamnija boja na hover */
+          }
+        }
+      }
