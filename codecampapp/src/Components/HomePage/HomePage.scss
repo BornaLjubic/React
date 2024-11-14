@@ -6,7 +6,7 @@
         min-height: 100vh;
         text-align: center;
         font-family: Arial, sans-serif;
-        background-color: #f0f0f0; /* Svijetla pozadinska boja */
+        background-color: #f0f0f0; 
       
         &_welcome {
           display: flex;
@@ -14,8 +14,8 @@
           align-items: center;
       
           img {
-            width: 100px; /* Veličina slike */
-            border-radius: 50%; /* Okrugli oblik slike */
+            width: 100px;
+            border-radius: 50%;
           }
         }
       
@@ -34,7 +34,7 @@
           cursor: pointer;
       
           &:hover {
-            background-color: #0056b3; /* Tamnija boja na hover */
+            background-color: #0056b3; 
           }
         }
       }

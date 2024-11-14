@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ff0000; /* Crvena pozadina */
+  color: #ffffff; /* Bijela boja za tekst */
+
+  .email {
+    font-size: 18px;
+  }
+
+  .logout-button {
+    background-color: #ff0000; /* Crvena boja za dugme */
+    color: #ffffff; /* Bijela boja za tekst na dugmetu */
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #000000; /* Tamnija crvena pri hoveru */
+    }
+  }
+}

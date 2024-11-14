@@ -1,21 +1,20 @@
-import React, { useState, FC } from "react";
-import "./HomePage.scss"
-import { Route, useNavigate } from "react-router-dom";
 
-type UserProfile = {
-  email?: string;
-  password?: string;
-  gender?: string;
-  country?: string;
-};
+import React, { FC } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const HomePage: FC = () => {
+  const navigate = useNavigate();
 
-const navigate= useNavigate()
+  const handleNavigateToTodo = () => {
+    navigate("/todo-list");
+  };
 
   return (
     <div className="home-page">
-      <button onClick={()=>navigate("./register")} >Register</button>
+      <p></p>
+      <button onClick={() => navigate("/registration")}>Register</button>
+      <button onClick={() => navigate("/login")}>Login</button>
+      <button onClick={() => navigate("/todolist" )}>Go to Todo List</button>
     </div>
   );
 };

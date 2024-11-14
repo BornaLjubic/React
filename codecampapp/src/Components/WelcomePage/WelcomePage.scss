@@ -1,40 +1,90 @@
-.home-page {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  
-    &_welcome {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      background-color: #ffffff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-      h1 {
-        font-size: 2rem;
-        margin-bottom: 20px;
-        color: #333;
-      }
-  
-      button {
-        font-size: 1rem;
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-  
-        &:hover {
-          background-color: #0056b3;
-        }
-      }
-    }
+.welcome-page {
+  text-align: center;
+  &__section{
+    margin-top: 20px;
   }
+
+}
+.todo-category{
+  padding: 10px;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  min-height: 100vh; 
+  text-align: center;
+}
+
+
+.task-input {
+  width: 100%;
+  max-width: 400px; 
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0; 
+}
+
+
+.task-button {
+  width: 100%;
+  max-width: 400px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0; 
+}
+
+.task-button:hover {
+  background-color: #0056b3;
+}
+
+
+.category-button {
+  width: 20%;
+  max-width: 400px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.todo-container {
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-text {
+  flex-grow: 1;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.delete-button:hover {
+  background-color: #e60000;
+}
